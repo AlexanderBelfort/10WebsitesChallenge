@@ -17,6 +17,14 @@ body {
     width: 1000px;
 }
 
+.container > h4 {
+    font-size: 15px;
+}
+
+.container > h5 {
+    font-size: 18px;
+}
+
 header {
     background-image: url("car-bg.jpg");
     background-size: cover;
@@ -40,13 +48,13 @@ header {
 }
 
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
 }
 
 nav .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -73,3 +81,148 @@ nav li a {
     padding: 1rem; 
 }
 
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type:none;
+    padding: 0;
+}
+
+footer strong {
+    color: #00c2ff;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.script__button1 {
+
+    background-color: #00c2ff;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+@media screen and (max-width: 700px) {
+
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+
+    nav .highlight {
+        display: none;
+
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+}
